@@ -1,0 +1,136 @@
+/* font.css */
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
+
+body {
+    font-family: 'Merriweather', serif;
+    font-size: 22px;
+}
+
+/* Font Styles */
+
+/* Apply Playfair Display to all headings */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 700; /* Bold for emphasis */
+}
+
+/* Apply Merriweather to all body text */
+body, p, li, input, textarea, button {
+    font-family: 'Merriweather', serif;
+    font-weight: 400; /* Regular weight for body text */
+    line-height: 1.6; /* Improve readability with appropriate line spacing */
+}
+
+/* Optional: Customize buttons to align with the body font */
+button, .btn {
+    font-family: 'Merriweather', serif;
+    font-weight: 600; /* Slightly bolder for buttons */
+}
+
+/* Example customization for headings */
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-family: 'Roboto Mono',monospace;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* Typewriter Effect Styling */
+.typewriter {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange }
+}
+
+/* Typewriter Effect for Roles */
+.roles-typewriter {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffffff; /* Adjust for visibility */
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+
+/* Form Input and Button Font Styling */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+
+form button {
+    font-family: 'Merriweather', serif;
+    font-size: 16px;
+}
+
+/* Highlight Dynamic Role Text */
+.open-to-work #dynamic-role {
+    font-family: 'Roboto Mono', monospace;
+    color: #ffffff; /* Highlight color for roles */
+    border-right: 2px solid #ffffff; /* Cursor effect */
+    display: inline-block;
+    animation: blink-cursor 0.7s step-end infinite;
+}
+
+@keyframes blink-cursor {
+    from {
+        border-right-color: #ffffff;
+    }
+    to {
+        border-right-color: transparent;
+    }
+}
+
+.open-to-work {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    color: #ffffff;
+    text-align: center;
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border: 2px solid #008000;
+    border-radius: 8px;
+    display: inline-block;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, background-color 0.2s ease;
+}
+
+.open-to-work:hover {
+    transform: scale(1.05);
+    background-color: #fdfdfd;
+}
+
+
+.open-to-work #dynamic-role {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.5rem;
+    color: #ffffff; /* Highlight color for roles */
+    border-right: 2px solid #ffffff; /* Cursor effect */
+    display: inline-block;
+    animation: blink-cursor 0.7s step-end infinite;
+}
+
