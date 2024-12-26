@@ -934,3 +934,176 @@ footer {
     flex: 1;
     text-align: center;
 }
+
+/*phone responsiveness adding  */
+@media (max-width: 576px) {
+    /* General body styling */
+    body {
+        padding: 10px;
+        font-size: 14px; /* Adjust base font size for smaller screens */
+    }
+
+    /* Navigation bar */
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    nav .logo {
+        font-size: 1.5rem; /* Smaller logo text */
+    }
+
+    nav ul {
+        display: none; /* Hide main menu */
+    }
+
+    nav .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+    }
+
+    nav ul.mobile-nav {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px 0;
+    }
+
+    nav ul.mobile-nav li {
+        margin: 5px 0;
+    }
+
+    nav ul.mobile-nav li a {
+        font-size: 1rem;
+    }
+
+    /* Hero section */
+    #hero h1 {
+        font-size: 1.8rem; /* Reduce size for smaller screens */
+        margin-bottom: 0.3em;
+    }
+
+    #hero h2 {
+        font-size: 1.5rem;
+        margin-bottom: 0.2em;
+    }
+
+    #hero p {
+        font-size: 1rem;
+        margin-bottom: 0.5em;
+    }
+
+    #hero .btn {
+        font-size: 0.9rem;
+    }
+
+    #hero .social-icons {
+        margin-top: 0.5em;
+    }
+
+    /* Skills section */
+    .skills-section {
+        grid-template-columns: 1fr; /* Single-column layout */
+    }
+
+    .skills-category img.skills-icon {
+        width: 60px;
+        height: 60px;
+    }
+
+    /* Portfolio section */
+    .portfolio-grid {
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .portfolio-item {
+        width: 100%; /* Full width for items */
+    }
+
+    /* Contact section */
+    input, textarea, button {
+        font-size: 14px; /* Adjust form input size */
+        padding: 8px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+
+    /* Footer */
+    footer {
+        font-size: 14px;
+    }
+
+    /* General text adjustments */
+    h1, h2 {
+        font-size: 1.5rem;
+    }
+
+    p, li {
+        font-size: 0.9rem;
+    }
+
+    /* Adjust the scroll-down animation */
+    .scroll-down {
+        font-size: 1.2rem;
+    }
+
+    /* Adjust the landing title */
+    .landing-title {
+        font-size: 2rem;
+    }
+
+    .landing-subtitle {
+        font-size: 1rem;
+    }
+
+    /* Typewriter effect */
+    .typewriter {
+        font-size: 1rem;
+    }
+
+    /* Education Section */
+    #education .section-title h2 {
+        font-size: 1.8rem;
+    }
+
+    #education .education-intro {
+        font-size: 1rem;
+    }
+
+    .education-details .degree-title {
+        font-size: 1.2rem;
+    }
+
+    .education-details .university-name,
+    .education-details .duration,
+    .education-details .cgpa {
+        font-size: 1rem;
+    }
+
+    .coursework-title {
+        font-size: 1.1rem;
+    }
+
+    .coursework-list li {
+        font-size: 0.9rem;
+    }
+
+    /* About section */
+    .about-paragraph {
+        font-size: 0.9rem;
+        padding: 0 10px;
+    }
+
+    .roles-typewriter {
+        font-size: 1rem;
+    }
+
+    .download-resume-btn {
+        font-size: 0.9rem;
+        padding: 8px 16px;
+    }
+}
