@@ -912,18 +912,13 @@ footer {
     text-align: center; /* Centers text */
 }
 
-.content-section {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-}
+@media (max-width: 768px) {
+    .content-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.content-section img {
-    max-width: 150px; /* Adjust size as needed */
-    border-radius: 10px;
-}
-
-.content-section p {
-    flex: 1;
+    .content-section img {
+        margin-bottom: 10px;
+    }
 }
