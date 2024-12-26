@@ -941,7 +941,7 @@ footer {
     vertical-align: middle; /* Align with text or other elements */
 }
 
-
+/*Phone responsiveness code*/
 @media (max-width: 576px) {
     /* General body styling */
     body {
