@@ -911,3 +911,19 @@ footer {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     text-align: center; /* Centers text */
 }
+
+.content-section {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-section img {
+    max-width: 150px; /* Adjust size as needed */
+    border-radius: 10px;
+}
+
+.content-section p {
+    flex: 1;
+}
