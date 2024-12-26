@@ -44,13 +44,11 @@
         </ul>
     </nav>
 
-    <script>            
-const menuToggle = document.querySelector('.menu-toggle');
-const navLinks = document.querySelector('.nav-links');
-
-menuToggle.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
-});
+    <script>
+        function toggleMenu() {
+            const mobileNav = document.querySelector("nav ul.mobile-nav");
+            mobileNav.style.display = mobileNav.style.display === "flex" ? "none" : "flex";
+        }
     </script>
         
         <!-- Landing Section -->
