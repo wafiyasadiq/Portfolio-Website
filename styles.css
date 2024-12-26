@@ -955,3 +955,36 @@ footer {
     }
 }
 
+/*phone responsive skill section  */
+/* Ensure the container is responsive */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping to the next line on smaller screens */
+    justify-content: center; /* Centers the content */
+    align-items: flex-start;
+    gap: 20px; /* Adds space between items */
+    padding: 20px;
+}
+
+/* Style each skill column */
+.skill-column {
+    flex: 1 1 calc(33.333% - 40px); /* Makes each column take up a third of the space */
+    min-width: 250px; /* Prevents columns from getting too narrow */
+    background-color: #ffe6e6; /* Background color */
+    padding: 15px;
+    border-radius: 8px; /* Adds rounded corners */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+}
+
+/* Add responsive behavior */
+@media (max-width: 768px) {
+    .skill-column {
+        flex: 1 1 calc(50% - 40px); /* Two columns on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .skill-column {
+        flex: 1 1 100%; /* One column on small screens */
+    }
+}
