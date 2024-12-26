@@ -327,20 +327,20 @@ document.addEventListener("DOMContentLoaded", () => {
     </div>
 </section>
 
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container">
-            <h2>Contact Me</h2>
-            <p>If you're interested in collaborating or hiring me, feel free to reach out!</p>
-            <form action="#" method="post">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="email" name="email" placeholder="Your Email" required>
-                <textarea name="message" placeholder="Your Message" required></textarea>
-                <button type="submit" class="btn">Send Message</button>
-            </form>
-        </div>
-    </section>
+<!-- Contact section -->
+   <section id="contact">
+    <div class="container">
+        <h2>Contact Me</h2>
+        <p>If you're interested in collaborating or hiring me, feel free to reach out!</p>
+        <form action="https://formspree.io/f/xblldnan" method="POST">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+        <p id="form-status" style="display:none; color:green;">Thank you! Your message has been sent.</p>
+    </div>
+</section>
 
     <footer>
         <div class="container">
