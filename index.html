@@ -32,24 +32,25 @@
             <li><a href="#blog">Blog</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
-        <ul class="mobile-nav">
-            <li><a href="#landing">Home</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#portfolio">Projects</a></li>
-            <li><a href="#blog">Blog</a></li>
-            <li><a href="#contact">Contact</a></li>
-            
-        </ul>
-    </nav>
-    
-    <script>
-        function toggleMenu() {
-            const mobileNav = document.querySelector("nav ul.mobile-nav");
-            mobileNav.style.display = mobileNav.style.display === "flex" ? "none" : "flex";
-        }
-    </script>
+            <nav>
+    <div class="menu-toggle">☰</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
 
+    <script>            
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+});
+    </script>
         
         <!-- Landing Section -->
 <section id="landing">
