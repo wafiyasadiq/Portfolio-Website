@@ -935,3 +935,38 @@ footer {
     text-align: center;
 }
 
+/*skills   */
+/* Skills Section Styling */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    padding: 20px;
+    background-color: #ffe6e6;
+}
+
+.skill-column {
+    flex: 1 1 30%;
+    min-width: 200px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    .skill-column {
+        flex: 1 1 45%;
+    }
+}
+
+/* Media query for mobile phones */
+@media (max-width: 480px) {
+    .skill-column {
+        flex: 1 1 100%;
+    }
+}
+
